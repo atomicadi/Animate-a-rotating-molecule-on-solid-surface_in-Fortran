@@ -29,7 +29,6 @@ program merge_files
             end if
             write(11, '(A)') trim(line)
         end do
-
         close(unit_in)
      
          !make the new directory/folder
@@ -38,10 +37,7 @@ program merge_files
          ! move the new output file, inside the new folder
          call system('mv ' // trim(input_file) // ' ' // trim(new_directory_name) // '/')
     end do
-
-    close(11)
-
-     
+   close(11)
 
 contains
 
