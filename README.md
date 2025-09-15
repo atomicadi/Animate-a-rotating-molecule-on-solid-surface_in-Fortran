@@ -5,4 +5,4 @@ Visual Molecular Dynamics (VMD) is a widely used molecular visualization and ana
 In this case, a molecule on a solid surface is rotated (Example 1) and translated (Example 2). After each rotation or translation, a separate coordinate file (.xyz format) is generated corresponding to that specific perturbation.
 
 
-Once the total number of coordinate files has been specified, the Fortran code (animation_rotation.f90) runs a loop to sequentially open, read, and store each perturbed coordinate file into a single animation file named animation_rotation.xyz. This combined file can then be loaded into VMD to animate the structural changes of the system on screen.
+Once the total number of coordinate files has been specified, the Fortran code (**animation_rotation.f90**) runs a loop to sequentially open, read, and store each perturbed coordinate file into a single animation file named **animation_rotation.xyz**. This combined file can then be loaded into VMD to animate the structural changes of the system on screen.
