@@ -1,4 +1,8 @@
 # Generating an animation file for Visual Molecular Dynamics (VMD) software in Fortran
 ![image alt](https://github.com/atomicadi/Animate-a-rotating-molecule-on-solid-surface_in-Fortran/blob/77e654e17ab198b5ca6d11fa38d2ae6e7e3bff33/Untitled.001.png)
-Visual Molecular Dynamics (VMD) is generally a molecular visualization and analysis computer program widely used in Computational Chemistry and Biological filed. VMD usually reads all the coordiantes of each step (eg, Molecular Dynamics, Optimization etc) of a system one-by-one in a single file (.xyz format) and visualize in a animated format.\
-Hare, a molecule on solid surface is rotated (example 1) and translated (example 2), and after each rotation/translation a single coordiante file (.xyz format) is generated corresponding to that perturbation. After setting the total number of coordinate files generated after each perturbation, the code (**animation_rotation.f90**) will start in a loop to open, read and store them (each perturbed coordinate file) in a single file (**animation_rotation.xyz**) one-by-one upto that set number. Finally this animation file will be loaded on VMD to animate the change in system on computer screen.
+Visual Molecular Dynamics (VMD) is a widely used molecular visualization and analysis program in the fields of computational chemistry and biology. VMD typically reads the coordinates of each step in a simulation (e.g., molecular dynamics, optimization, etc.) from a single file (commonly in .xyz format) and visualizes the system as an animation.
+
+In this case, a molecule on a solid surface is rotated (Example 1) and translated (Example 2). After each rotation or translation, a separate coordinate file (.xyz format) is generated corresponding to that specific perturbation.
+
+
+Once the total number of coordinate files has been specified, the Fortran code (animation_rotation.f90) runs a loop to sequentially open, read, and store each perturbed coordinate file into a single animation file named animation_rotation.xyz. This combined file can then be loaded into VMD to animate the structural changes of the system on screen.
