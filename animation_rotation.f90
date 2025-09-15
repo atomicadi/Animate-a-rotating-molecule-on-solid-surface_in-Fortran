@@ -1,3 +1,6 @@
+! Aditya Barman, Project Associate, Manipal University Jaipur;
+! Email: atomicadi2023@gmail.com
+
 program merge_files
     implicit none
     character(len=100) :: input_file, new_directory_name
@@ -7,12 +10,10 @@ program merge_files
     ! Open the output file
     open(unit=11, file= "animation_rotation.xyz", iostat=io_status)
      
-
     ! Loop through input files and write their content to the output file
     do j = 1, 360
         input_file = 'rot_' // trim(adjustl(int2str(j))) // '.xyz'
-
-        new_directory_name = 'rot_' // trim(adjustl(int2str(j)))
+         new_directory_name = 'rot_' // trim(adjustl(int2str(j)))
         
         ! Opening input file
         open(newunit=unit_in, file=input_file, iostat=io_status)
