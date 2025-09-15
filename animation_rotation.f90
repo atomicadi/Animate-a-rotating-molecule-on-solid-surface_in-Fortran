@@ -48,5 +48,4 @@ contains
         character(len=10) :: s
         write(s, '(I10)') i
     end function int2str
-
 end program merge_files
